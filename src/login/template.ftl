@@ -44,7 +44,7 @@
            tabindex="0">
             Skip to main content
         </a>
-        <a class="bx--header__name" href="/">
+        <a class="bx--header__name" href="${properties.headerUrl}">
             ${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}
         </a>
     </header>
@@ -68,7 +68,7 @@
                             <span class="kc-feedback-text">${kcSanitize(message.summary)?no_esc}</span>
                         </div>
                     </#if>
-
+                    
                     <#nested "form">
 
                     <#if displayInfo>

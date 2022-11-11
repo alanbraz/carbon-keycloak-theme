@@ -3,6 +3,9 @@
     <#if section = "header">
         ${msg("doLogIn", client.name)}
     <#elseif section = "form">
+        <br/>
+        <p><strong>${properties.oldUsers}</strong></p>
+        <br/>
         <div id="kc-form" <#if realm.password && social.providers??>class="${properties.kcContentWrapperClass!}"</#if>>
             <div id="kc-form-wrapper"
                  <#if realm.password && social.providers??>class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}"</#if>>
