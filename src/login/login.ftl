@@ -3,9 +3,7 @@
     <#if section = "header">
         ${msg("doLogIn", client.name)}
     <#elseif section = "form">
-        <br/>
-        <p><strong>RXN has moved to a new home. If your account was created prior to Nov 11, 2022 and this is your first time logging in since then, please <a href="${url.registrationUrl}">create a new account</a> using the same email address. All of your prior projects and artifacts will be waiting for you.</strong></p>
-        <br/>
+        
         <div id="kc-form" <#if realm.password && social.providers??>class="${properties.kcContentWrapperClass!}"</#if>>
             <div id="kc-form-wrapper"
                  <#if realm.password && social.providers??>class="${properties.kcFormSocialAccountContentClass!} ${properties.kcFormSocialAccountClass!}"</#if>>

@@ -69,6 +69,9 @@
                         </div>
                     </#if>
                     
+                    <p><strong>${url} RXN has moved to a new home. If your account was created prior to Dec 12, 2022 and this is your first time logging in since then, please <a href="${url.registrationUrl}">create a new account</a> using the same email address. All of your prior projects and artifacts will be waiting for you.</strong></p>
+                    <br/>
+
                     <#nested "form">
 
                     <#if displayInfo>
