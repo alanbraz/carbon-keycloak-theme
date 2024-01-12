@@ -53,3 +53,71 @@ body {
 .login-pf-social-link {
   margin-bottom: 0.5rem;
 }
+
+
+// New styles
+body,
+.bx--content {
+  background-color: #f3f3f3 !important;
+}
+.bx--header {
+  padding: 11px 32px 8px;
+  background: transparent;
+  border-bottom: 1px solid #e0e0e0;
+}
+.bx--header__name {
+  margin-left: 32px;
+  padding-left: 32px;
+  border-left: 1px solid #e0e0e0;
+  font-weight: 500;
+  line-height: 26px;
+  color: #161616;
+}
+.bx--row {
+  margin: 0 !important;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-title {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.left-side {
+  padding: 144px 224px 32px 112px;
+}
+.right-side {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bx--text-input {
+  background: white;
+}
+.bx--checkbox-label {
+  padding-left: 30px;
+}
+.login-pf-settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 1056px) {
+  .left-side {
+    padding: 144px 66px 32px 32px;
+  }
+}
+@media (max-width: 320px) {
+  .login-pf-settings {
+    flex-direction: column;
+  }
+}
+@media (min-width: 672px) {
+  #kc-content {
+    max-width: 400px;
+  }
+}

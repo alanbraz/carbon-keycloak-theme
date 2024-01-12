@@ -44,13 +44,15 @@
            tabindex="0">
             Skip to main content
         </a>
-        <a class="bx--header__name" href="${properties.headerUrl}">
+        <img style="width: 66px;" src="${url.resourcesPath}/img/ibm-logo.svg"
+            class="logo" />
+        <span class="bx--header__name" href="${properties.headerUrl}">
             ${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}
-        </a>
+        </span>
     </header>
 
-    <div class="${properties.kcLoginClass!} bx--content" id="main-content">
-        <div class="${properties.kcFormCardClass!} form-card bx--tile <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
+    <div class="${properties.kcLoginClass!} bx--content bx--row" id="main-content">
+        <div class="${properties.kcFormCardClass!} form-card left-side bx--col-lg-7 bx--col-md-4 bx--col-sm-6 <#if displayWide>${properties.kcFormCardAccountClass!}</#if>">
             <header class="${properties.kcFormHeaderClass!}">
                 <h1 id="kc-page-title" class="page-title"><#nested "header"></h1>
             </header>
@@ -84,6 +86,7 @@
                 </div>
             </div>
         </div>
+        <div class="right-side bx--col-lg-5 bx--col-md-4 bx--col-sm-0" style="background-image: url(${url.resourcesPath}/img/login-bg.png);"></div>
     </div>
     <#if realm.internationalizationEnabled  && locale.supported?size gt 1>
         <div class="FixedLanguageSelect">
